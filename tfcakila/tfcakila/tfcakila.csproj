@@ -66,6 +66,12 @@
     <Compile Include="classe.Designer.cs">
       <DependentUpon>classe.cs</DependentUpon>
     </Compile>
+    <Compile Include="cours.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="cours.Designer.cs">
+      <DependentUpon>cours.cs</DependentUpon>
+    </Compile>
     <Compile Include="eleve.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -112,6 +118,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="classe.resx">
       <DependentUpon>classe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cours.resx">
+      <DependentUpon>cours.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="eleve.resx">
       <DependentUpon>eleve.cs</DependentUpon>

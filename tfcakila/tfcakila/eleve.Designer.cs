@@ -32,9 +32,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtmat = new System.Windows.Forms.TextBox();
             this.txtnom = new System.Windows.Forms.TextBox();
             this.txtpostnom = new System.Windows.Forms.TextBox();
             this.txtprenom = new System.Windows.Forms.TextBox();
@@ -49,7 +47,6 @@
             this.txtideleve = new System.Windows.Forms.TextBox();
             this.tableaueleve = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -99,16 +96,6 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "PreNom";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(250, 49);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(113, 27);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Matricule";
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -118,14 +105,6 @@
             this.label6.Size = new System.Drawing.Size(207, 27);
             this.label6.TabIndex = 7;
             this.label6.Text = "Date de Naissance";
-            // 
-            // txtmat
-            // 
-            this.txtmat.Location = new System.Drawing.Point(470, 41);
-            this.txtmat.Multiline = true;
-            this.txtmat.Name = "txtmat";
-            this.txtmat.Size = new System.Drawing.Size(291, 35);
-            this.txtmat.TabIndex = 8;
             // 
             // txtnom
             // 
@@ -231,7 +210,7 @@
             // 
             // txtideleve
             // 
-            this.txtideleve.Location = new System.Drawing.Point(783, 41);
+            this.txtideleve.Location = new System.Drawing.Point(698, 55);
             this.txtideleve.Multiline = true;
             this.txtideleve.Name = "txtideleve";
             this.txtideleve.Size = new System.Drawing.Size(63, 35);
@@ -243,7 +222,6 @@
             this.tableaueleve.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tableaueleve.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
-            this.Column2,
             this.Column3,
             this.Column4,
             this.Column5,
@@ -261,11 +239,6 @@
             // 
             this.Column1.HeaderText = "id";
             this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "MATRICULE";
-            this.Column2.Name = "Column2";
             // 
             // Column3
             // 
@@ -314,9 +287,7 @@
             this.Controls.Add(this.txtprenom);
             this.Controls.Add(this.txtpostnom);
             this.Controls.Add(this.txtnom);
-            this.Controls.Add(this.txtmat);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -336,9 +307,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtmat;
         private System.Windows.Forms.TextBox txtnom;
         private System.Windows.Forms.TextBox txtpostnom;
         private System.Windows.Forms.TextBox txtprenom;
@@ -353,7 +322,6 @@
         private System.Windows.Forms.TextBox txtideleve;
         private System.Windows.Forms.DataGridView tableaueleve;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;

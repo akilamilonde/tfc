@@ -58,5 +58,12 @@ namespace tfcakila
             panel1.Controls.Clear();
             panel1.Controls.Add(ens);
         }
+
+        private void coursToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            cours cr = new cours();
+            panel1.Controls.Clear();
+            panel1.Controls.Add(cr);
+        }
     }
 }

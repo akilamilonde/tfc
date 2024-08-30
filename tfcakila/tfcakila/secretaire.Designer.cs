@@ -106,6 +106,7 @@
             this.coursToolStripMenuItem.Name = "coursToolStripMenuItem";
             this.coursToolStripMenuItem.Size = new System.Drawing.Size(70, 29);
             this.coursToolStripMenuItem.Text = "Cours";
+            this.coursToolStripMenuItem.Click += new System.EventHandler(this.coursToolStripMenuItem_Click);
             // 
             // séctionToolStripMenuItem
             // 

@@ -26,7 +26,7 @@ namespace tfcakila
                 con.Open();
                 MySqlDataReader dr = cmd.ExecuteReader();
                 while (dr.Read()) {
-                   tableaueleve.Rows.Add(dr[0].ToString(), dr[1].ToString(), dr[2].ToString(), dr[3].ToString(), dr[4].ToString(), dr[5].ToString(), dr[6].ToString(), dr[7].ToString());
+                   tableaueleve.Rows.Add(dr[0].ToString(), dr[1].ToString(), dr[2].ToString(), dr[3].ToString(), dr[4].ToString(), dr[5].ToString(), dr[6].ToString());
                 }
                 dr.Close();
                 con.Close();
@@ -53,7 +53,7 @@ namespace tfcakila
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MySqlCommand cmd = new MySqlCommand("insert into eleve (ideleve, matricule, nom, postnom, prenom, genre, datenaissance, lieunaissance) values('" + txtideleve.Text + "', '" + txtmat.Text + "','" + txtnom.Text + "','" + txtpostnom.Text + "','" + txtprenom.Text + "','" + cmbgenre.Text + "', '" + dtnaissance.Value.ToString("yyMMdd") + "','" + txtlieu.Text + "')", con);
+            MySqlCommand cmd = new MySqlCommand("insert into eleve (ideleve, nom, postnom, prenom, genre, datenaissance, lieunaissance) values('" + txtideleve.Text + "', '" + txtnom.Text + "','" + txtpostnom.Text + "','" + txtprenom.Text + "','" + cmbgenre.Text + "', '" + dtnaissance.Value.ToString("yyMMdd") + "','" + txtlieu.Text + "')", con);
             con.Open();
             if (cmd.ExecuteNonQuery() == 1)
             {
@@ -98,7 +98,7 @@ namespace tfcakila
         {
             try
             {
-                MySqlCommand cmd = new MySqlCommand("Update eleve set matricule= '" + txtmat.Text + "', nom='" + txtnom.Text + "',postnom='" + txtpostnom.Text + "', prenom'" + txtprenom.Text + "',genre='" + cmbgenre.Text + "', datenaissence'" + dtnaissance.Value.ToString("yyMMdd") + "',lieunaissance='" + txtlieu.Text + "' where idutilisateur='" + txtideleve.Text + "'",con);
+                MySqlCommand cmd = new MySqlCommand("Update eleve set  nom='" + txtnom.Text + "',postnom='" + txtpostnom.Text + "', prenom'" + txtprenom.Text + "',genre='" + cmbgenre.Text + "', datenaissence'" + dtnaissance.Value.ToString("yyMMdd") + "',lieunaissance='" + txtlieu.Text + "' where ideleve='" + txtideleve.Text + "'",con);
                 con.Open();
                 if (cmd.ExecuteNonQuery() == 1) {
                     con.Close();
@@ -124,19 +124,17 @@ namespace tfcakila
             if (tableaueleve.CurrentRow.Cells[0].Value != null)
             {
                 txtideleve.Text = tableaueleve.CurrentRow.Cells[0].Value.ToString();
-                txtmat.Text = tableaueleve.CurrentRow.Cells[1].Value.ToString();
-                txtnom.Text = tableaueleve.CurrentRow.Cells[2].Value.ToString();
-                txtpostnom.Text = tableaueleve.CurrentRow.Cells[3].Value.ToString();
-                txtprenom.Text = tableaueleve.CurrentRow.Cells[4].Value.ToString();
-                cmbgenre.Text = tableaueleve.CurrentRow.Cells[5].Value.ToString();
-                txtlieu.Text = tableaueleve.CurrentRow.Cells[7].Value.ToString();
+                txtnom.Text = tableaueleve.CurrentRow.Cells[1].Value.ToString();
+                txtpostnom.Text = tableaueleve.CurrentRow.Cells[2].Value.ToString();
+                txtprenom.Text = tableaueleve.CurrentRow.Cells[3].Value.ToString();
+                cmbgenre.Text = tableaueleve.CurrentRow.Cells[4].Value.ToString();
+                txtlieu.Text = tableaueleve.CurrentRow.Cells[5].Value.ToString();
             }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             txtideleve.Text = "";
-            txtmat.Text = "";
             txtnom.Text = "";
             txtpostnom.Text = "";
             txtprenom.Text = "";

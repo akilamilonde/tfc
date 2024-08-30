@@ -18,3 +18,24 @@ C:\Users\AKILA\Documents\Visual Studio 2012\Projects\tfcakila\tfcakila\bin\Debug
 C:\Users\AKILA\Documents\Visual Studio 2012\Projects\tfcakila\tfcakila\obj\Debug\tfcakila.section.resources
 C:\Users\AKILA\Documents\Visual Studio 2012\Projects\tfcakila\tfcakila\obj\Debug\tfcakila.classe.resources
 C:\Users\AKILA\Documents\Visual Studio 2012\Projects\tfcakila\tfcakila\obj\Debug\tfcakila.enseignant.resources
+D:\tfc\tfcakila\tfcakila\bin\Debug\tfcakila.exe.config
+D:\tfc\tfcakila\tfcakila\obj\Debug\tfcakila.exe
+D:\tfc\tfcakila\tfcakila\obj\Debug\tfcakila.pdb
+D:\tfc\tfcakila\tfcakila\bin\Debug\tfcakila.exe
+D:\tfc\tfcakila\tfcakila\bin\Debug\tfcakila.pdb
+D:\tfc\tfcakila\tfcakila\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+D:\tfc\tfcakila\tfcakila\bin\Debug\Bunifu.Licensing.dll
+D:\tfc\tfcakila\tfcakila\bin\Debug\Bunifu.UI.WinForms.BunifuButton.xml
+D:\tfc\tfcakila\tfcakila\obj\Debug\tfcakila.csprojResolveAssemblyReference.cache
+D:\tfc\tfcakila\tfcakila\obj\Debug\tfcakila.acceuil.resources
+D:\tfc\tfcakila\tfcakila\obj\Debug\tfcakila.administrateur.resources
+D:\tfc\tfcakila\tfcakila\obj\Debug\tfcakila.classe.resources
+D:\tfc\tfcakila\tfcakila\obj\Debug\tfcakila.eleve.resources
+D:\tfc\tfcakila\tfcakila\obj\Debug\tfcakila.enseignant.resources
+D:\tfc\tfcakila\tfcakila\obj\Debug\tfcakila.Form1.resources
+D:\tfc\tfcakila\tfcakila\obj\Debug\tfcakila.Properties.Resources.resources
+D:\tfc\tfcakila\tfcakila\obj\Debug\tfcakila.secretaire.resources
+D:\tfc\tfcakila\tfcakila\obj\Debug\tfcakila.section.resources
+D:\tfc\tfcakila\tfcakila\obj\Debug\tfcakila.utilisateur.resources
+D:\tfc\tfcakila\tfcakila\obj\Debug\tfcakila.csproj.GenerateResource.Cache
+D:\tfc\tfcakila\tfcakila\obj\Debug\tfcakila.cours.resources
