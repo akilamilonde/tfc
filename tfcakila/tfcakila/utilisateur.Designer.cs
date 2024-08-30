@@ -39,11 +39,12 @@
             this.supprimer = new System.Windows.Forms.Button();
             this.modifier = new System.Windows.Forms.Button();
             this.vider = new System.Windows.Forms.Button();
+            this.txtid = new System.Windows.Forms.TextBox();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtid = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.tableau)).BeginInit();
             this.SuspendLayout();
             // 
@@ -107,6 +108,7 @@
             this.tableau.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tableau.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
+            this.Column5,
             this.Column2,
             this.Column3,
             this.Column4});
@@ -115,6 +117,7 @@
             this.tableau.RowTemplate.Height = 28;
             this.tableau.Size = new System.Drawing.Size(757, 150);
             this.tableau.TabIndex = 6;
+            this.tableau.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tableau_CellClick);
             this.tableau.SelectionChanged += new System.EventHandler(this.tableau_SelectionChanged);
             // 
             // ajouter
@@ -161,10 +164,24 @@
             this.vider.UseVisualStyleBackColor = true;
             this.vider.Click += new System.EventHandler(this.vider_Click);
             // 
+            // txtid
+            // 
+            this.txtid.Location = new System.Drawing.Point(292, 41);
+            this.txtid.Multiline = true;
+            this.txtid.Name = "txtid";
+            this.txtid.Size = new System.Drawing.Size(260, 37);
+            this.txtid.TabIndex = 11;
+            // 
             // Column1
             // 
             this.Column1.HeaderText = "id";
             this.Column1.Name = "Column1";
+            this.Column1.Visible = false;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "NUMERO";
+            this.Column5.Name = "Column5";
             // 
             // Column2
             // 
@@ -180,14 +197,6 @@
             // 
             this.Column4.HeaderText = "Fonction";
             this.Column4.Name = "Column4";
-            // 
-            // txtid
-            // 
-            this.txtid.Location = new System.Drawing.Point(292, 41);
-            this.txtid.Multiline = true;
-            this.txtid.Name = "txtid";
-            this.txtid.Size = new System.Drawing.Size(260, 37);
-            this.txtid.TabIndex = 11;
             // 
             // utilisateur
             // 
@@ -227,10 +236,11 @@
         private System.Windows.Forms.Button supprimer;
         private System.Windows.Forms.Button modifier;
         private System.Windows.Forms.Button vider;
+        private System.Windows.Forms.TextBox txtid;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.TextBox txtid;
     }
 }

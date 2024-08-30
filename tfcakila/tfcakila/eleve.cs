@@ -25,8 +25,10 @@ namespace tfcakila
                 MySqlCommand cmd = new MySqlCommand("select * from eleve", con);
                 con.Open();
                 MySqlDataReader dr = cmd.ExecuteReader();
+                int nb = 0;
                 while (dr.Read()) {
-                   tableaueleve.Rows.Add(dr[0].ToString(), dr[1].ToString(), dr[2].ToString(), dr[3].ToString(), dr[4].ToString(), dr[5].ToString(), dr[6].ToString());
+                    nb++;
+                   tableaueleve.Rows.Add(dr[0].ToString(), nb,dr[1].ToString(), dr[2].ToString(), dr[3].ToString(), dr[4].ToString(), dr[5].ToString(), dr[6].ToString());
                 }
                 dr.Close();
                 con.Close();
@@ -121,15 +123,7 @@ namespace tfcakila
 
         private void tableaueleve_SelectionChanged(object sender, EventArgs e)
         {
-            if (tableaueleve.CurrentRow.Cells[0].Value != null)
-            {
-                txtideleve.Text = tableaueleve.CurrentRow.Cells[0].Value.ToString();
-                txtnom.Text = tableaueleve.CurrentRow.Cells[1].Value.ToString();
-                txtpostnom.Text = tableaueleve.CurrentRow.Cells[2].Value.ToString();
-                txtprenom.Text = tableaueleve.CurrentRow.Cells[3].Value.ToString();
-                cmbgenre.Text = tableaueleve.CurrentRow.Cells[4].Value.ToString();
-                txtlieu.Text = tableaueleve.CurrentRow.Cells[5].Value.ToString();
-            }
+           
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -140,6 +134,19 @@ namespace tfcakila
             txtprenom.Text = "";
             cmbgenre.Text = "";
             txtlieu.Text = "";
+        }
+
+        private void tableaueleve_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (tableaueleve.CurrentRow.Cells[0].Value != null)
+            {
+                txtideleve.Text = tableaueleve.CurrentRow.Cells[0].Value.ToString();
+                txtnom.Text = tableaueleve.CurrentRow.Cells[2].Value.ToString();
+                txtpostnom.Text = tableaueleve.CurrentRow.Cells[3].Value.ToString();
+                txtprenom.Text = tableaueleve.CurrentRow.Cells[4].Value.ToString();
+                cmbgenre.Text = tableaueleve.CurrentRow.Cells[5].Value.ToString();
+                txtlieu.Text = tableaueleve.CurrentRow.Cells[7].Value.ToString();
+            }
         }
     }
 }

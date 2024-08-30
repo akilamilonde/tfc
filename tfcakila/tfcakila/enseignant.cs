@@ -26,9 +26,11 @@ namespace tfcakila
                 MySqlCommand cmd = new MySqlCommand("select * from enseignant", con);
                 con.Open();
                 MySqlDataReader dr = cmd.ExecuteReader();
+                int nb = 0;
                 while (dr.Read())
                 {
-                    tableauenseignant.Rows.Add(dr[0].ToString(), dr[1].ToString(), dr[2].ToString(), dr[3].ToString(), dr[4].ToString(), dr[5].ToString(), dr[6].ToString(), dr[7].ToString());
+                    nb++;
+                    tableauenseignant.Rows.Add(dr[0].ToString(),nb, dr[1].ToString(), dr[2].ToString(), dr[3].ToString(), dr[4].ToString(), dr[5].ToString(), dr[6].ToString(), dr[7].ToString());
                 }
                 dr.Close();
                 con.Close();
@@ -132,15 +134,20 @@ namespace tfcakila
 
         private void tableauenseignant_SelectionChanged(object sender, EventArgs e)
         {
+            
+        }
+
+        private void tableauenseignant_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
             if (tableauenseignant.CurrentRow.Cells[0].Value != null)
             {
                 txtid.Text = tableauenseignant.CurrentRow.Cells[0].Value.ToString();
-                txtmatricule.Text = tableauenseignant.CurrentRow.Cells[1].Value.ToString();
-                txtnom.Text = tableauenseignant.CurrentRow.Cells[2].Value.ToString();
-                txtpostnom.Text = tableauenseignant.CurrentRow.Cells[3].Value.ToString();
-                txtprenom.Text = tableauenseignant.CurrentRow.Cells[4].Value.ToString();
-                cmbgenre.Text = tableauenseignant.CurrentRow.Cells[5].Value.ToString();
-                txtlieu.Text = tableauenseignant.CurrentRow.Cells[7].Value.ToString();
+                txtmatricule.Text = tableauenseignant.CurrentRow.Cells[2].Value.ToString();
+                txtnom.Text = tableauenseignant.CurrentRow.Cells[3].Value.ToString();
+                txtpostnom.Text = tableauenseignant.CurrentRow.Cells[4].Value.ToString();
+                txtprenom.Text = tableauenseignant.CurrentRow.Cells[5].Value.ToString();
+                cmbgenre.Text = tableauenseignant.CurrentRow.Cells[6].Value.ToString();
+                txtlieu.Text = tableauenseignant.CurrentRow.Cells[8].Value.ToString();
             }
         }
     }

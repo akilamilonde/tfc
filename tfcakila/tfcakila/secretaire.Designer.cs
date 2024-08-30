@@ -86,6 +86,7 @@
             this.inscriptionToolStripMenuItem.Name = "inscriptionToolStripMenuItem";
             this.inscriptionToolStripMenuItem.Size = new System.Drawing.Size(203, 30);
             this.inscriptionToolStripMenuItem.Text = "inscription";
+            this.inscriptionToolStripMenuItem.Click += new System.EventHandler(this.inscriptionToolStripMenuItem_Click);
             // 
             // enseignantsToolStripMenuItem
             // 

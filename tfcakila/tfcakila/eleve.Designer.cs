@@ -47,6 +47,7 @@
             this.txtideleve = new System.Windows.Forms.TextBox();
             this.tableaueleve = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -222,6 +223,7 @@
             this.tableaueleve.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tableaueleve.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
+            this.Column2,
             this.Column3,
             this.Column4,
             this.Column5,
@@ -233,12 +235,19 @@
             this.tableaueleve.RowTemplate.Height = 28;
             this.tableaueleve.Size = new System.Drawing.Size(988, 536);
             this.tableaueleve.TabIndex = 24;
+            this.tableaueleve.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tableaueleve_CellClick);
             this.tableaueleve.SelectionChanged += new System.EventHandler(this.tableaueleve_SelectionChanged);
             // 
             // Column1
             // 
             this.Column1.HeaderText = "id";
             this.Column1.Name = "Column1";
+            this.Column1.Visible = false;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "NUMERO";
+            this.Column2.Name = "Column2";
             // 
             // Column3
             // 
@@ -322,6 +331,7 @@
         private System.Windows.Forms.TextBox txtideleve;
         private System.Windows.Forms.DataGridView tableaueleve;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;

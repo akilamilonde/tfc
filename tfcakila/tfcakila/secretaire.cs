@@ -65,5 +65,12 @@ namespace tfcakila
             panel1.Controls.Clear();
             panel1.Controls.Add(cr);
         }
+
+        private void inscriptionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            inscription ins = new inscription();
+            panel1.Controls.Clear();
+            panel1.Controls.Add(ins);
+        }
     }
 }

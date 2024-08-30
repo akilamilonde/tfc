@@ -25,8 +25,10 @@ namespace tfcakila
                 MySqlCommand cmd = new MySqlCommand("select * from utilisateur", con);
                 con.Open();
                 MySqlDataReader dr = cmd.ExecuteReader();
+                int nb = 0;
                 while (dr.Read()) {
-                    tableau.Rows.Add(dr[0].ToString(), dr[1].ToString(), dr[2].ToString(), dr[3].ToString());
+                    nb++;
+                    tableau.Rows.Add(dr[0].ToString(),nb, dr[1].ToString(), dr[2].ToString(), dr[3].ToString());
                 }
                 dr.Close();
                 con.Close();
@@ -92,12 +94,7 @@ namespace tfcakila
 
         private void tableau_SelectionChanged(object sender, EventArgs e)
         {
-            if (tableau.CurrentRow.Cells[0].Value != null) {
-                txtid.Text = tableau.CurrentRow.Cells[0].Value.ToString();
-                txtusername.Text = tableau.CurrentRow.Cells[1].Value.ToString();
-                txtmotdepasse.Text = tableau.CurrentRow.Cells[2].Value.ToString();
-                cmbfonction.Text = tableau.CurrentRow.Cells[3].Value.ToString();
-            }
+            
         }
 
         private void supprimer_Click(object sender, EventArgs e)
@@ -132,6 +129,17 @@ namespace tfcakila
             txtusername.Text = "";
             cmbfonction.Text = "";
             
+        }
+
+        private void tableau_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (tableau.CurrentRow.Cells[0].Value != null)
+            {
+                txtid.Text = tableau.CurrentRow.Cells[0].Value.ToString();
+                txtusername.Text = tableau.CurrentRow.Cells[2].Value.ToString();
+                txtmotdepasse.Text = tableau.CurrentRow.Cells[3].Value.ToString();
+                cmbfonction.Text = tableau.CurrentRow.Cells[4].Value.ToString();
+            }
         }
     }
 }

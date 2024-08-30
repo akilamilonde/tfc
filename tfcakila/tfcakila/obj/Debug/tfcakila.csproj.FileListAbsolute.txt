@@ -39,3 +39,4 @@ D:\tfc\tfcakila\tfcakila\obj\Debug\tfcakila.section.resources
 D:\tfc\tfcakila\tfcakila\obj\Debug\tfcakila.utilisateur.resources
 D:\tfc\tfcakila\tfcakila\obj\Debug\tfcakila.csproj.GenerateResource.Cache
 D:\tfc\tfcakila\tfcakila\obj\Debug\tfcakila.cours.resources
+D:\tfc\tfcakila\tfcakila\obj\Debug\tfcakila.inscription.resources

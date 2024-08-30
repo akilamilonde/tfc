@@ -63,6 +63,16 @@ namespace tfcakila.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1724754037193 {
+            get {
+                object obj = ResourceManager.GetObject("1724754037193", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _lock {
             get {
                 object obj = ResourceManager.GetObject("lock", resourceCulture);
@@ -76,6 +86,16 @@ namespace tfcakila.Properties {
         internal static System.Drawing.Bitmap iconperson {
             get {
                 object obj = ResourceManager.GetObject("iconperson", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_inska {
+            get {
+                object obj = ResourceManager.GetObject("logo inska", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

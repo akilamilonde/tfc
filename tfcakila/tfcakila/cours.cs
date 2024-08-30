@@ -26,9 +26,11 @@ namespace tfcakila
                 MySqlCommand cmd = new MySqlCommand("SELECT cours. *, enseignant.nom, enseignant.postnom, enseignant.prenom FROM cours, enseignant WHERE cours.idenseignant=enseignant.idenseingant; ", con);
                 con.Open();
                 MySqlDataReader dr = cmd.ExecuteReader();
+                int nb=0;
                 while (dr.Read())
                 {
-                    tableaucours.Rows.Add(dr[0].ToString(), dr[1].ToString(), dr[3].ToString() + " " + dr[3].ToString() + " " + dr[4].ToString() + " " + dr[5].ToString());
+                    nb++;
+                    tableaucours.Rows.Add(dr[0].ToString(),nb, dr[1].ToString(), dr[3].ToString() + " " + dr[3].ToString() + " " + dr[4].ToString() + " " + dr[5].ToString());
                 }
                 dr.Close();
                 con.Close();
@@ -50,8 +52,10 @@ namespace tfcakila
                 MySqlCommand cmd = new MySqlCommand("select * from enseignant", con);
                 con.Open();
                 MySqlDataReader dr = cmd.ExecuteReader();
+            
                 while (dr.Read())
                 {
+                   
                     cmbenseignant.Items.Add(dr[0].ToString() + "." + dr[2].ToString() + " " + dr[3].ToString() + " " + dr[4].ToString());
                 }
                 dr.Close();
@@ -141,6 +145,16 @@ namespace tfcakila
             txtid.Text = "";
             txtdesi.Text = "";
             cmbenseignant.Text = "";
+        }
+
+        private void tableaucours_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (tableaucours.CurrentRow.Cells[0].Value != null)
+            {
+                txtid.Text = tableaucours.CurrentRow.Cells[0].Value.ToString();
+                txtdesi.Text = tableaucours.CurrentRow.Cells[2].Value.ToString();
+                cmbenseignant.Text = tableaucours.CurrentRow.Cells[3].Value.ToString() ;
+            }
         }
     }
 }

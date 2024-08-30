@@ -34,13 +34,14 @@
             this.txtid = new System.Windows.Forms.TextBox();
             this.cmbenseignant = new System.Windows.Forms.ComboBox();
             this.tableaucours = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.tableaucours)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,6 +95,7 @@
             this.tableaucours.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tableaucours.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
+            this.Column4,
             this.Column2,
             this.Column3});
             this.tableaucours.Location = new System.Drawing.Point(97, 203);
@@ -101,21 +103,7 @@
             this.tableaucours.RowTemplate.Height = 28;
             this.tableaucours.Size = new System.Drawing.Size(922, 150);
             this.tableaucours.TabIndex = 5;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "id";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "DESIGNATION";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "ENSEIGNANT DU COURS";
-            this.Column3.Name = "Column3";
+            this.tableaucours.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tableaucours_CellClick);
             // 
             // button1
             // 
@@ -153,13 +141,34 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(846, 118);
+            this.button4.Location = new System.Drawing.Point(846, 121);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(173, 46);
             this.button4.TabIndex = 9;
             this.button4.Text = "VIDER";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "id";
+            this.Column1.Name = "Column1";
+            this.Column1.Visible = false;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "NUMERO";
+            this.Column4.Name = "Column4";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "DESIGNATION";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "ENSEIGNANT DU COURS";
+            this.Column3.Name = "Column3";
             // 
             // cours
             // 
@@ -192,12 +201,13 @@
         private System.Windows.Forms.TextBox txtid;
         private System.Windows.Forms.ComboBox cmbenseignant;
         private System.Windows.Forms.DataGridView tableaucours;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
     }
 }
