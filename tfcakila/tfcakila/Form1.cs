@@ -21,23 +21,23 @@ namespace tfcakila
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (txtusername.Text != "" && txtmotdepasse.Text != "")
+            if (txtusername.Text != "" && textBox1.Text != "")
             {
-                MySqlCommand cmd = new MySqlCommand("Select * from utilisateur where username= '" + txtusername.Text + "' and motdepasse='" + txtmotdepasse.Text + "'", con);
+                MySqlCommand cmd = new MySqlCommand("Select * from utilisateur where username= '" + txtusername.Text + "' and motdepasse='" + textBox1.Text + "'", con);
                 con.Open();
                 MySqlDataReader dr = cmd.ExecuteReader();
                 if (dr.Read())
                 {
                     if (dr[3].ToString() == "Administrateur")
                     {
-                        administrateur administrateur = new administrateur();
-                        administrateur.Show();
+                        aceuilcool aceuilcool = new aceuilcool();
+                        aceuilcool.Show();
                         con.Close();
                         this.Hide();
                     }
                     else if (dr[3].ToString() == "Secretaire")
                     {
-                        secretaire sec = new secretaire();
+                        sec sec = new sec();
                         sec.Show();
                         con.Close();
                         this.Hide();
@@ -60,27 +60,32 @@ namespace tfcakila
 
         private void pictureBox3_MouseDown(object sender, MouseEventArgs e)
         {
-            txtmotdepasse.UseSystemPasswordChar = false;
+           
         }
 
         private void pictureBox3_MouseUp(object sender, MouseEventArgs e)
         {
-            txtmotdepasse.UseSystemPasswordChar = true;
+           
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void txtmotdepasse_TextChanged(object sender, EventArgs e)
         {
-            txtmotdepasse.UseSystemPasswordChar = true;
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            txtmotdepasse.UseSystemPasswordChar = false;
+            textBox1.UseSystemPasswordChar = true;
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

@@ -40,3 +40,5 @@ D:\tfc\tfcakila\tfcakila\obj\Debug\tfcakila.utilisateur.resources
 D:\tfc\tfcakila\tfcakila\obj\Debug\tfcakila.csproj.GenerateResource.Cache
 D:\tfc\tfcakila\tfcakila\obj\Debug\tfcakila.cours.resources
 D:\tfc\tfcakila\tfcakila\obj\Debug\tfcakila.inscription.resources
+D:\tfc\tfcakila\tfcakila\obj\Debug\tfcakila.aceuilcool.resources
+D:\tfc\tfcakila\tfcakila\obj\Debug\tfcakila.sec.resources

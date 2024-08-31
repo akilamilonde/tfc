@@ -45,7 +45,10 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tableau)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -122,46 +125,55 @@
             // 
             // ajouter
             // 
+            this.ajouter.BackColor = System.Drawing.Color.Aqua;
+            this.ajouter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ajouter.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ajouter.Location = new System.Drawing.Point(562, 84);
             this.ajouter.Name = "ajouter";
             this.ajouter.Size = new System.Drawing.Size(160, 42);
             this.ajouter.TabIndex = 7;
             this.ajouter.Text = "AJOUTER";
-            this.ajouter.UseVisualStyleBackColor = true;
+            this.ajouter.UseVisualStyleBackColor = false;
             this.ajouter.Click += new System.EventHandler(this.ajouter_Click);
             // 
             // supprimer
             // 
+            this.supprimer.BackColor = System.Drawing.Color.Red;
+            this.supprimer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.supprimer.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.supprimer.Location = new System.Drawing.Point(562, 159);
             this.supprimer.Name = "supprimer";
             this.supprimer.Size = new System.Drawing.Size(160, 42);
             this.supprimer.TabIndex = 8;
             this.supprimer.Text = "SUPPRIMER";
-            this.supprimer.UseVisualStyleBackColor = true;
+            this.supprimer.UseVisualStyleBackColor = false;
             this.supprimer.Click += new System.EventHandler(this.supprimer_Click);
             // 
             // modifier
             // 
+            this.modifier.BackColor = System.Drawing.Color.Lime;
+            this.modifier.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.modifier.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.modifier.Location = new System.Drawing.Point(728, 84);
             this.modifier.Name = "modifier";
             this.modifier.Size = new System.Drawing.Size(150, 42);
             this.modifier.TabIndex = 9;
             this.modifier.Text = "MODIFIER";
-            this.modifier.UseVisualStyleBackColor = true;
+            this.modifier.UseVisualStyleBackColor = false;
             this.modifier.Click += new System.EventHandler(this.modifier_Click);
             // 
             // vider
             // 
+            this.vider.BackColor = System.Drawing.Color.Black;
+            this.vider.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.vider.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.vider.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.vider.Location = new System.Drawing.Point(728, 162);
             this.vider.Name = "vider";
             this.vider.Size = new System.Drawing.Size(150, 42);
             this.vider.TabIndex = 10;
             this.vider.Text = "VIDER";
-            this.vider.UseVisualStyleBackColor = true;
+            this.vider.UseVisualStyleBackColor = false;
             this.vider.Click += new System.EventHandler(this.vider_Click);
             // 
             // txtid
@@ -198,10 +210,32 @@
             this.Column4.HeaderText = "Fonction";
             this.Column4.Name = "Column4";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1011, 57);
+            this.panel1.TabIndex = 12;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(33, 10);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(234, 37);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "UTILISATEUR";
+            // 
             // utilisateur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtid);
             this.Controls.Add(this.vider);
             this.Controls.Add(this.modifier);
@@ -218,6 +252,8 @@
             this.Size = new System.Drawing.Size(1011, 605);
             this.Load += new System.EventHandler(this.utilisateur_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tableau)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -242,5 +278,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label4;
     }
 }

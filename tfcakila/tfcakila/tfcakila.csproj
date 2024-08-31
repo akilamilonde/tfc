@@ -54,6 +54,12 @@
     <Compile Include="acceuil.Designer.cs">
       <DependentUpon>acceuil.cs</DependentUpon>
     </Compile>
+    <Compile Include="aceuilcool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aceuilcool.Designer.cs">
+      <DependentUpon>aceuilcool.cs</DependentUpon>
+    </Compile>
     <Compile Include="administrateur.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sec.Designer.cs">
+      <DependentUpon>sec.cs</DependentUpon>
+    </Compile>
     <Compile Include="secretaire.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +130,9 @@
     </Compile>
     <EmbeddedResource Include="acceuil.resx">
       <DependentUpon>acceuil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aceuilcool.resx">
+      <DependentUpon>aceuilcool.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="administrateur.resx">
       <DependentUpon>administrateur.cs</DependentUpon>
@@ -150,6 +165,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="sec.resx">
+      <DependentUpon>sec.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="secretaire.resx">
       <DependentUpon>secretaire.cs</DependentUpon>
     </EmbeddedResource>
@@ -186,6 +204,66 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logo inska.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_male_circle_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_male_circle_24px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\collaboration_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disconnected_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_male_circle_24px2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_2_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invisible_filled_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invisible_filled_50px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invisible_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\students_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report_card_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\classroom_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\option_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_24px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inscription_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\collaboration_24px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\students_50px1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
