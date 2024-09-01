@@ -178,11 +178,17 @@
   <data name="inscription_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\inscription_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="report_card_64px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\report_card_64px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="invisible_16px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\invisible_16px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="save_24px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\save_24px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="students_50px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\students_50px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="invisible_filled_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\invisible_filled_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,7 +196,7 @@
   <data name="disconnected_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\disconnected_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="students_50px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\students_50px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="vertical_settings_mixer_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vertical_settings_mixer_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

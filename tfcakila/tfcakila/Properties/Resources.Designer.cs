@@ -233,6 +233,16 @@ namespace tfcakila.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap report_card_64px1 {
+            get {
+                object obj = ResourceManager.GetObject("report_card_64px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap save_24px {
             get {
                 object obj = ResourceManager.GetObject("save_24px", resourceCulture);
@@ -296,6 +306,16 @@ namespace tfcakila.Properties {
         internal static System.Drawing.Bitmap user_male_circle_24px2 {
             get {
                 object obj = ResourceManager.GetObject("user_male_circle_24px2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vertical_settings_mixer_24px {
+            get {
+                object obj = ResourceManager.GetObject("vertical_settings_mixer_24px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

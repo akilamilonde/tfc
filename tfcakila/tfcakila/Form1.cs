@@ -42,7 +42,13 @@ namespace tfcakila
                         con.Close();
                         this.Hide();
                     }
-
+                    else if (dr[3].ToString() == "Directeurdesetudes")
+                    {
+                        proviseur prov = new proviseur();
+                        prov.Show();
+                        con.Close();
+                        this.Hide();
+                    }
                 }
                 else
                 {
