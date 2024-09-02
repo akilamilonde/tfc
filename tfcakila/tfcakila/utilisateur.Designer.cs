@@ -35,16 +35,16 @@
             this.txtmotdepasse = new System.Windows.Forms.TextBox();
             this.cmbfonction = new System.Windows.Forms.ComboBox();
             this.tableau = new System.Windows.Forms.DataGridView();
-            this.ajouter = new System.Windows.Forms.Button();
-            this.supprimer = new System.Windows.Forms.Button();
-            this.modifier = new System.Windows.Forms.Button();
-            this.vider = new System.Windows.Forms.Button();
-            this.txtid = new System.Windows.Forms.TextBox();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ajouter = new System.Windows.Forms.Button();
+            this.supprimer = new System.Windows.Forms.Button();
+            this.modifier = new System.Windows.Forms.Button();
+            this.vider = new System.Windows.Forms.Button();
+            this.txtid = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tableau)).BeginInit();
@@ -123,67 +123,6 @@
             this.tableau.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tableau_CellClick);
             this.tableau.SelectionChanged += new System.EventHandler(this.tableau_SelectionChanged);
             // 
-            // ajouter
-            // 
-            this.ajouter.BackColor = System.Drawing.Color.Aqua;
-            this.ajouter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ajouter.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ajouter.Location = new System.Drawing.Point(562, 84);
-            this.ajouter.Name = "ajouter";
-            this.ajouter.Size = new System.Drawing.Size(160, 42);
-            this.ajouter.TabIndex = 7;
-            this.ajouter.Text = "AJOUTER";
-            this.ajouter.UseVisualStyleBackColor = false;
-            this.ajouter.Click += new System.EventHandler(this.ajouter_Click);
-            // 
-            // supprimer
-            // 
-            this.supprimer.BackColor = System.Drawing.Color.Red;
-            this.supprimer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.supprimer.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.supprimer.Location = new System.Drawing.Point(562, 159);
-            this.supprimer.Name = "supprimer";
-            this.supprimer.Size = new System.Drawing.Size(160, 42);
-            this.supprimer.TabIndex = 8;
-            this.supprimer.Text = "SUPPRIMER";
-            this.supprimer.UseVisualStyleBackColor = false;
-            this.supprimer.Click += new System.EventHandler(this.supprimer_Click);
-            // 
-            // modifier
-            // 
-            this.modifier.BackColor = System.Drawing.Color.Lime;
-            this.modifier.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.modifier.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.modifier.Location = new System.Drawing.Point(728, 84);
-            this.modifier.Name = "modifier";
-            this.modifier.Size = new System.Drawing.Size(150, 42);
-            this.modifier.TabIndex = 9;
-            this.modifier.Text = "MODIFIER";
-            this.modifier.UseVisualStyleBackColor = false;
-            this.modifier.Click += new System.EventHandler(this.modifier_Click);
-            // 
-            // vider
-            // 
-            this.vider.BackColor = System.Drawing.Color.Black;
-            this.vider.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.vider.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.vider.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.vider.Location = new System.Drawing.Point(728, 162);
-            this.vider.Name = "vider";
-            this.vider.Size = new System.Drawing.Size(150, 42);
-            this.vider.TabIndex = 10;
-            this.vider.Text = "VIDER";
-            this.vider.UseVisualStyleBackColor = false;
-            this.vider.Click += new System.EventHandler(this.vider_Click);
-            // 
-            // txtid
-            // 
-            this.txtid.Location = new System.Drawing.Point(292, 41);
-            this.txtid.Multiline = true;
-            this.txtid.Name = "txtid";
-            this.txtid.Size = new System.Drawing.Size(260, 37);
-            this.txtid.TabIndex = 11;
-            // 
             // Column1
             // 
             this.Column1.HeaderText = "id";
@@ -210,9 +149,73 @@
             this.Column4.HeaderText = "Fonction";
             this.Column4.Name = "Column4";
             // 
+            // ajouter
+            // 
+            this.ajouter.BackColor = System.Drawing.Color.Navy;
+            this.ajouter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ajouter.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ajouter.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ajouter.Location = new System.Drawing.Point(562, 84);
+            this.ajouter.Name = "ajouter";
+            this.ajouter.Size = new System.Drawing.Size(160, 42);
+            this.ajouter.TabIndex = 7;
+            this.ajouter.Text = "AJOUTER";
+            this.ajouter.UseVisualStyleBackColor = false;
+            this.ajouter.Click += new System.EventHandler(this.ajouter_Click);
+            // 
+            // supprimer
+            // 
+            this.supprimer.BackColor = System.Drawing.Color.Red;
+            this.supprimer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.supprimer.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.supprimer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.supprimer.Location = new System.Drawing.Point(562, 129);
+            this.supprimer.Name = "supprimer";
+            this.supprimer.Size = new System.Drawing.Size(160, 42);
+            this.supprimer.TabIndex = 8;
+            this.supprimer.Text = "SUPPRIMER";
+            this.supprimer.UseVisualStyleBackColor = false;
+            this.supprimer.Click += new System.EventHandler(this.supprimer_Click);
+            // 
+            // modifier
+            // 
+            this.modifier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.modifier.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.modifier.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.modifier.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.modifier.Location = new System.Drawing.Point(728, 84);
+            this.modifier.Name = "modifier";
+            this.modifier.Size = new System.Drawing.Size(150, 42);
+            this.modifier.TabIndex = 9;
+            this.modifier.Text = "MODIFIER";
+            this.modifier.UseVisualStyleBackColor = false;
+            this.modifier.Click += new System.EventHandler(this.modifier_Click);
+            // 
+            // vider
+            // 
+            this.vider.BackColor = System.Drawing.Color.Black;
+            this.vider.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.vider.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.vider.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.vider.Location = new System.Drawing.Point(728, 129);
+            this.vider.Name = "vider";
+            this.vider.Size = new System.Drawing.Size(150, 42);
+            this.vider.TabIndex = 10;
+            this.vider.Text = "VIDER";
+            this.vider.UseVisualStyleBackColor = false;
+            this.vider.Click += new System.EventHandler(this.vider_Click);
+            // 
+            // txtid
+            // 
+            this.txtid.Location = new System.Drawing.Point(292, 41);
+            this.txtid.Multiline = true;
+            this.txtid.Name = "txtid";
+            this.txtid.Size = new System.Drawing.Size(260, 37);
+            this.txtid.TabIndex = 11;
+            // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel1.BackColor = System.Drawing.Color.Navy;
             this.panel1.Controls.Add(this.label4);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -235,6 +238,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtid);
             this.Controls.Add(this.vider);

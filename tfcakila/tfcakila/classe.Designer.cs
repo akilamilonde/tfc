@@ -33,15 +33,15 @@
             this.cmbsection = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tableauclasse = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.txtidclasse = new System.Windows.Forms.TextBox();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tableauclasse)).BeginInit();
@@ -100,6 +100,27 @@
             this.tableauclasse.TabIndex = 4;
             this.tableauclasse.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tableauclasse_CellClick);
             this.tableauclasse.SelectionChanged += new System.EventHandler(this.tableauclasse_SelectionChanged);
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "idclasse";
+            this.Column1.Name = "Column1";
+            this.Column1.Visible = false;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "NUMERO";
+            this.Column4.Name = "Column4";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "PROMOTION";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "SECTION";
+            this.Column3.Name = "Column3";
             // 
             // button1
             // 
@@ -162,30 +183,9 @@
             this.txtidclasse.Size = new System.Drawing.Size(65, 35);
             this.txtidclasse.TabIndex = 9;
             // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "idclasse";
-            this.Column1.Name = "Column1";
-            this.Column1.Visible = false;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "NUMERO";
-            this.Column4.Name = "Column4";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "PROMOTION";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "SECTION";
-            this.Column3.Name = "Column3";
-            // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel1.BackColor = System.Drawing.Color.Navy;
             this.panel1.Controls.Add(this.label4);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -208,6 +208,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtidclasse);
             this.Controls.Add(this.button4);

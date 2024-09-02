@@ -46,3 +46,8 @@ D:\tfc\tfcakila\tfcakila\obj\Debug\tfcakila.jury.resources
 D:\tfc\tfcakila\tfcakila\obj\Debug\tfcakila.brassage.resources
 D:\tfc\tfcakila\tfcakila\obj\Debug\tfcakila.proviseur.resources
 D:\tfc\tfcakila\tfcakila\obj\Debug\tfcakila.Form2.resources
+D:\tfc\tfcakila\tfcakila\obj\Debug\tfcakila.mixage.resources
+D:\tfc\tfcakila\tfcakila\obj\Debug\tfcakila.controllisteinscri.resources
+D:\tfc\tfcakila\tfcakila\obj\Debug\tfcakila.rapportsec.resources
+D:\tfc\tfcakila\tfcakila\obj\Debug\RdlCompile.cache
+D:\tfc\tfcakila\tfcakila\obj\Debug\RdlCompile.compiled

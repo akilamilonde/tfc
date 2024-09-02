@@ -72,5 +72,12 @@ namespace tfcakila
             log.Show();
             this.Hide();
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            rapportsec rp = new rapportsec();
+            panel2.Controls.Clear();
+            panel2.Controls.Add(rp);
+        }
     }
 }

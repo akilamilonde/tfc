@@ -8,10 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace tfcakila
 {
     public partial class proviseur : Form
     {
+
         public proviseur()
         {
             InitializeComponent();
@@ -33,9 +35,15 @@ namespace tfcakila
 
         private void button3_Click(object sender, EventArgs e)
         {
-            brassage bra = new brassage();
+
+            mixage mix = new mixage();
             panel2.Controls.Clear();
-            panel2.Controls.Add(bra);
+            panel2.Controls.Add(mix);
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
