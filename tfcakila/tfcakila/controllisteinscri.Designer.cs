@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.DataTable2BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.DataSet1 = new tfcakila.DataSet1();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -87,13 +87,13 @@
             // 
             // reportViewer1
             // 
-            reportDataSource2.Name = "DataSet1";
-            reportDataSource2.Value = this.DataTable2BindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
+            reportDataSource1.Name = "DataSet1";
+            reportDataSource1.Value = this.DataTable2BindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "tfcakila.Report1.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(51, 129);
             this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(1148, 310);
+            this.reportViewer1.Size = new System.Drawing.Size(1148, 830);
             this.reportViewer1.TabIndex = 2;
             // 
             // DataTable2TableAdapter
@@ -108,7 +108,7 @@
             this.Controls.Add(this.reportViewer1);
             this.Controls.Add(this.panel1);
             this.Name = "controllisteinscri";
-            this.Size = new System.Drawing.Size(1250, 495);
+            this.Size = new System.Drawing.Size(1250, 962);
             this.Load += new System.EventHandler(this.controllisteinscri_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DataTable2BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataSet1)).EndInit();

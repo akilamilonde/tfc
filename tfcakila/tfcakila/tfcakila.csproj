@@ -75,6 +75,11 @@
     <Compile Include="brassage.Designer.cs">
       <DependentUpon>brassage.cs</DependentUpon>
     </Compile>
+    <Compile Include="brassageinskaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>brassageinskaDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="classe.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -121,6 +126,18 @@
     </Compile>
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
     </Compile>
     <Compile Include="inscription.cs">
       <SubType>UserControl</SubType>
@@ -211,6 +228,12 @@
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="inscription.resx">
       <DependentUpon>inscription.cs</DependentUpon>
     </EmbeddedResource>
@@ -250,6 +273,17 @@
     <EmbeddedResource Include="utilisateur.resx">
       <DependentUpon>utilisateur.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="brassageinskaDataSet.xsc">
+      <DependentUpon>brassageinskaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="brassageinskaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>brassageinskaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="brassageinskaDataSet.xss">
+      <DependentUpon>brassageinskaDataSet.xsd</DependentUpon>
+    </None>
     <None Include="DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>

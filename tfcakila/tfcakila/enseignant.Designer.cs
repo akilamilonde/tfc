@@ -172,9 +172,10 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Aqua;
+            this.button1.BackColor = System.Drawing.Color.Navy;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button1.Location = new System.Drawing.Point(672, 166);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(349, 36);
@@ -253,9 +254,10 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.Lime;
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button2.Location = new System.Drawing.Point(672, 217);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(349, 36);
@@ -269,6 +271,7 @@
             this.button3.BackColor = System.Drawing.Color.Red;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button3.Location = new System.Drawing.Point(672, 273);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(349, 36);
