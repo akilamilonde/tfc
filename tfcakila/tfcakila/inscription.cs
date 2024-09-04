@@ -13,7 +13,7 @@ namespace tfcakila
 {
     public partial class inscription : UserControl
     {
-        MySqlConnection con = new MySqlConnection(@"server=localhost; uid='root';pwd='';database= brassageinska");
+        MySqlConnection conn = new MySqlConnection(@"server=localhost; uid='root';pwd='';database= brassageinska");
         public inscription()
         {
             InitializeComponent();
@@ -23,8 +23,8 @@ namespace tfcakila
             try
             {
                 tableauinscri.Rows.Clear();
-                MySqlCommand cmd = new MySqlCommand("SELECT inscription. * ,eleve.nom,eleve.postnom,eleve.prenom,classe.designationclasse, section.designationsection FROM eleve, inscription, classe, section WHERE inscription.ideleve=eleve.ideleve and inscription.idclasse=classe.idclasse and section.idsection=classe.idsection", con);
-                con.Open();
+                MySqlCommand cmd = new MySqlCommand("SELECT inscription. * ,eleve.nom,eleve.postnom,eleve.prenom,classe.designationclasse, section.designationsection FROM eleve, inscription, classe, section WHERE inscription.ideleve=eleve.ideleve and inscription.idclasse=classe.idclasse and section.idsection=classe.idsection", conn);
+                conn.Open();
                 MySqlDataReader dr = cmd.ExecuteReader();
                 int nb = 0;
                 while (dr.Read())
@@ -33,7 +33,7 @@ namespace tfcakila
                     tableauinscri.Rows.Add(dr[0].ToString(), nb, dr[1].ToString(), dr[4].ToString() + " " + dr[5].ToString() + " " + dr[6].ToString(), dr[7].ToString() + " " + dr[8].ToString(), dr[2].ToString(), dr[3].ToString());
                 }
                 dr.Close();
-                con.Close();
+                conn.Close();
             }
             catch (MySqlException msg)
             {
@@ -53,15 +53,16 @@ namespace tfcakila
             selection_tableauinscri();
             try
             {
-                MySqlCommand cmd = new MySqlCommand("SELECT classe.*,section.designationsection from classe, section where classe.idsection=section.idsection;", con);
-                con.Open();
+
+                MySqlCommand cmd = new MySqlCommand("SELECT classe.*,section.designationsection from classe, section where classe.idsection=section.idsection;", conn);
+                conn.Open();
                 MySqlDataReader dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
                     cmbclasse.Items.Add(dr[0].ToString() + "." + dr[1].ToString() + " " + dr[3].ToString());
                 }
                 dr.Close();
-                con.Close();
+                conn.Close();
             }
             catch (MySqlException msg)
             {
@@ -71,15 +72,15 @@ namespace tfcakila
             try
             {
 
-                MySqlCommand cmd = new MySqlCommand("select * from eleve", con);
-                con.Open();
+                MySqlCommand cmd = new MySqlCommand("select * from eleve", conn);
+                conn.Open();
                 MySqlDataReader dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
                     cmbeleve.Items.Add(dr[0].ToString() + "." + dr[1].ToString() + " " + dr[2].ToString() + " " + dr[3].ToString());
                 }
                 dr.Close();
-                con.Close();
+                conn.Close();
             }
             catch (MySqlException msg)
             {
@@ -90,18 +91,18 @@ namespace tfcakila
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MySqlCommand cmd = new MySqlCommand("insert into inscription (idinscri, dateinscri, ideleve, idclasse) values ('" + txtid.Text + "', '" + dtinscri.Value.ToString("yyMMdd") + "','" + cmbeleve.Text + "','" + cmbclasse.Text + "')", con);
-            con.Open();
+            MySqlCommand cmd = new MySqlCommand("insert into inscription (idinscri, dateinscri, ideleve, idclasse) values ('" + txtid.Text + "', '" + dtinscri.Value.ToString("yyMMdd") + "','" + cmbeleve.Text + "','" + cmbclasse.Text + "')", conn);
+            conn.Open();
             if (cmd.ExecuteNonQuery() == 1)
             {
-                con.Close();
+                conn.Close();
                 MessageBox.Show("Enregistrement effectué avec succès", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 selection_tableauinscri();
             }
             else
             {
                 MessageBox.Show("Enregistrement Echoué", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                con.Close();
+                conn.Close();
             }
         }
 
@@ -109,11 +110,11 @@ namespace tfcakila
         {
             try
             {
-                MySqlCommand cmd = new MySqlCommand("delete from inscription  where idinscri='" + txtid.Text + "'", con);
-                con.Open();
+                MySqlCommand cmd = new MySqlCommand("delete from inscription  where idinscri='" + txtid.Text + "'", conn);
+                conn.Open();
                 if (cmd.ExecuteNonQuery() == 1)
                 {
-                    con.Close();
+                    conn.Close();
                     MessageBox.Show("Suppression effectué avec succès", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     selection_tableauinscri();
 
@@ -122,7 +123,7 @@ namespace tfcakila
                 else
                 {
                     MessageBox.Show("Suppression Echoué", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    con.Close();
+                    conn.Close();
                 }
             }
             catch (MySqlException msg)
@@ -136,11 +137,11 @@ namespace tfcakila
         {
             try
             {
-                MySqlCommand cmd = new MySqlCommand("Update inscription set  dateinscri='" + dtinscri.Value.ToString("yyMMdd") + "', ideleve='" + cmbeleve.Text + "', idclasse='" + cmbclasse.Text + "'where idinscri='" + txtid.Text + "'", con);
-                con.Open();
+                MySqlCommand cmd = new MySqlCommand("Update inscription set  dateinscri='" + dtinscri.Value.ToString("yyMMdd") + "', ideleve='" + cmbeleve.Text + "', idclasse='" + cmbclasse.Text + "'where idinscri='" + txtid.Text + "'", conn);
+                conn.Open();
                 if (cmd.ExecuteNonQuery() == 1)
                 {
-                    con.Close();
+                    conn.Close();
                     MessageBox.Show("Modification effectué avec succès", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     selection_tableauinscri();
 
@@ -149,7 +150,7 @@ namespace tfcakila
                 else
                 {
                     MessageBox.Show("Modification Echoué", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    con.Close();
+                    conn.Close();
                 }
             }
             catch (MySqlException msg)

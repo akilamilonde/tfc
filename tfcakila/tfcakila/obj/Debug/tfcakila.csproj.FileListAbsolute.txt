@@ -53,3 +53,4 @@ D:\tfc\tfcakila\tfcakila\obj\Debug\RdlCompile.cache
 D:\tfc\tfcakila\tfcakila\obj\Debug\RdlCompile.compiled
 D:\tfc\tfcakila\tfcakila\obj\Debug\tfcakila.Form3.resources
 D:\tfc\tfcakila\tfcakila\obj\Debug\tfcakila.Form4.resources
+D:\tfc\tfcakila\tfcakila\obj\Debug\tfcakila.affectense.resources

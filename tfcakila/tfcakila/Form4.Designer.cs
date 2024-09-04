@@ -45,7 +45,7 @@
             this.Column2,
             this.Column3,
             this.Column4});
-            this.brassage.Location = new System.Drawing.Point(42, 40);
+            this.brassage.Location = new System.Drawing.Point(41, 121);
             this.brassage.Name = "brassage";
             this.brassage.RowTemplate.Height = 28;
             this.brassage.Size = new System.Drawing.Size(1134, 310);

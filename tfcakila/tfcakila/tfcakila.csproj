@@ -69,6 +69,12 @@
     <Compile Include="administrateur.Designer.cs">
       <DependentUpon>administrateur.cs</DependentUpon>
     </Compile>
+    <Compile Include="affectense.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="affectense.Designer.cs">
+      <DependentUpon>affectense.cs</DependentUpon>
+    </Compile>
     <Compile Include="brassage.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -203,6 +209,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="administrateur.resx">
       <DependentUpon>administrateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="affectense.resx">
+      <DependentUpon>affectense.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="brassage.resx">
       <DependentUpon>brassage.cs</DependentUpon>
@@ -388,6 +397,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\vertical_settings_mixer_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vertical_settings_mixer_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vertical_settings_mixer_100px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

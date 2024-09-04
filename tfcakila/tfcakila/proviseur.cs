@@ -45,5 +45,19 @@ namespace tfcakila
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form1 log = new Form1();
+            log.Show();
+            this.Hide();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            affectense aff = new affectense();
+            panel2.Controls.Clear();
+            panel2.Controls.Add(aff);
+        }
     }
 }
