@@ -25,7 +25,10 @@ namespace tfcakila
             {
                 brassage.Rows.Clear();
                 MySqlCommand cmd = new MySqlCommand("SELECT enseignant.nom,enseignant.postnom,enseignant.prenom,jury.designation FROM enseignant,jury,affectation where enseignant.idenseingant=affectation.idenseingant and affectation.idjury= jury.idjury;", con);
-                con.Open();
+                if (con.State == ConnectionState.Closed)
+                {
+                    con.Open();
+                }
                 MySqlDataReader dr = cmd.ExecuteReader();
                 int nb = 0;
                 while (dr.Read())
@@ -45,6 +48,25 @@ namespace tfcakila
 
         private void button1_Click(object sender, EventArgs e)
         {
+            try
+            {
+                MySqlCommand trn = new MySqlCommand("TRUNCATE table affectation",con);
+                con.Open();
+                if (trn.ExecuteNonQuery() == 1)
+                {
+                    con.Close();
+                }
+                else
+                {
+                    con.Close();
+                }
+            }
+            catch (MySqlException msg)
+            {
+
+                MessageBox.Show("Erreur" + msg);
+            }
+            
             MySqlCommand cmd = new MySqlCommand("SELECT COUNT(idenseingant ) from enseignant where (idenseingant ) NOT IN (SELECT idenseingant FROM affectation)", con);
                 con.Open();
                 MySqlDataReader dr = cmd.ExecuteReader();
@@ -65,13 +87,19 @@ namespace tfcakila
                            
                             con.Close();
                             MySqlCommand cmdrr = new MySqlCommand("SELECT * from jury;", con);
-                            con.Open();
+                            if (con.State == ConnectionState.Closed)
+                            {
+                                con.Open();
+                            }
                             MySqlDataReader drrr = cmdrr.ExecuteReader();
                             while (drrr.Read())
                             {
                                 int jury = int.Parse(drrr[0].ToString());
                                 MySqlCommand cmdrrrr = new MySqlCommand("SELECT idenseingant   from enseignant where (idenseingant  ) NOT IN (SELECT idenseingant FROM affectation) order by idenseingant   limit 1", conn);
-                                conn.Open();
+                                if (conn.State == ConnectionState.Closed)
+                                {
+                                    conn.Open();
+                                }
                                 MySqlDataReader drrrr = cmdrrrr.ExecuteReader();
                                 if (drrrr.Read())
                                 {
@@ -83,25 +111,24 @@ namespace tfcakila
                                     if (ins.ExecuteNonQuery() == 1)
                                     {
                                         conn.Close();
-                                        MessageBox.Show("Enregistrement effectué avec succès", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                       
                                         
                                     }
                                     else
                                     {
-                                        MessageBox.Show("Enregistrement Echoué", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                        
                                         conn.Close();
                                     }
                                 }
                                 else
                                 {
-                                    con.Close();
+                                    //con.Close();
                                     drrrr.Close(); 
                                 }
                             }
                             nb = nb - nbjury;
 
-                            con.Close();
+                           
                             drrr.Close();
                         }
                         con.Close();
@@ -112,6 +139,9 @@ namespace tfcakila
                 }
                 con.Close();
                 dr.Close();
+                MessageBox.Show("Affectation  avec succès", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                      
+                Brassages();
         
         }
 

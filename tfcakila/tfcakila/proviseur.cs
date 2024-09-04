@@ -59,5 +59,12 @@ namespace tfcakila
             panel2.Controls.Clear();
             panel2.Controls.Add(aff);
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            rapportsprov af = new rapportsprov();
+            panel2.Controls.Clear();
+            panel2.Controls.Add(af);
+        }
     }
 }

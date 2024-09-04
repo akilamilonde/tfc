@@ -23,7 +23,7 @@ namespace tfcakila
         {
             try
             {
-                
+                con.Close();
                 brassage.Rows.Clear();
                 MySqlCommand cmd = new MySqlCommand("SELECT eleve.nom,eleve.postnom,eleve.prenom,classe.designationclasse,section.designationsection,jury.designation FROM eleve,classe,section,inscription,jury,brassage where eleve.ideleve=inscription.ideleve and inscription.idclasse=classe.idclasse and classe.idsection=section.idsection and inscription.idinscri=brassage.inscription and jury.idjury=brassage.jury;", con);
                 con.Open();
@@ -45,6 +45,7 @@ namespace tfcakila
         }
         private void button1_Click(object sender, EventArgs e)
         {
+            MySqlCommand trn = new MySqlCommand("TRUNCATE table brassage");
            MySqlCommand cmd = new MySqlCommand("SELECT COUNT(idinscri)  from inscription where (idinscri) NOT IN (SELECT inscription FROM brassage)", con);
                 con.Open();
                 MySqlDataReader dr = cmd.ExecuteReader();
@@ -52,7 +53,7 @@ namespace tfcakila
                 {
                     
                     int nb = int.Parse(dr[0].ToString());
-                    label1.Text = nb.ToString();
+                   
                     con.Close();
                     for (int i = 0; i <= nb; i++)
                     {
@@ -66,7 +67,7 @@ namespace tfcakila
                         if (drr.Read())
                         {
                             int nbjury = int.Parse(drr[0].ToString());
-                            label2.Text = nbjury.ToString();
+                           
                             con.Close();
                             MySqlCommand cmdrr = new MySqlCommand("SELECT * from jury;", con);
                             if (con.State == ConnectionState.Closed)
@@ -99,13 +100,13 @@ namespace tfcakila
                                     if (ins.ExecuteNonQuery() == 1)
                                     {
                                         conn.Close();
-                                        MessageBox.Show("Enregistrement effectué avec succès", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                         
+                                   
                                         
                                     }
                                     else
                                     {
-                                        MessageBox.Show("Enregistrement Echoué", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                       
                                         conn.Close();
                                     }
                                 }
@@ -116,8 +117,8 @@ namespace tfcakila
                                 }
                             }
                             nb = nb - nbjury;
-
-                            //con.Close();
+                            
+                            
                             drrr.Close();
                         }
                         //con.Close();
@@ -128,12 +129,20 @@ namespace tfcakila
                 }
                 con.Close();
                 dr.Close();
+                MessageBox.Show("Brassage  reussie avec succès", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Brassages();
 
         }
 
         private void mixage_Load(object sender, EventArgs e)
         {
             Brassages();
+            label1.Visible = false;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
         
     }

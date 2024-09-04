@@ -171,11 +171,23 @@
     <Compile Include="proviseur.Designer.cs">
       <DependentUpon>proviseur.cs</DependentUpon>
     </Compile>
+    <Compile Include="rapafec.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="rapafec.Designer.cs">
+      <DependentUpon>rapafec.cs</DependentUpon>
+    </Compile>
     <Compile Include="rapportsec.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="rapportsec.Designer.cs">
       <DependentUpon>rapportsec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rapportsprov.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="rapportsprov.Designer.cs">
+      <DependentUpon>rapportsprov.cs</DependentUpon>
     </Compile>
     <Compile Include="sec.cs">
       <SubType>Form</SubType>
@@ -201,6 +213,12 @@
     <Compile Include="utilisateur.Designer.cs">
       <DependentUpon>utilisateur.cs</DependentUpon>
     </Compile>
+    <Compile Include="utrap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="utrap.Designer.cs">
+      <DependentUpon>utrap.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="acceuil.resx">
       <DependentUpon>acceuil.cs</DependentUpon>
     </EmbeddedResource>
@@ -210,6 +228,7 @@
     <EmbeddedResource Include="administrateur.resx">
       <DependentUpon>administrateur.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="afec.rdlc" />
     <EmbeddedResource Include="affectense.resx">
       <DependentUpon>affectense.cs</DependentUpon>
     </EmbeddedResource>
@@ -266,8 +285,14 @@
     <EmbeddedResource Include="proviseur.resx">
       <DependentUpon>proviseur.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="rapafec.resx">
+      <DependentUpon>rapafec.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="rapportsec.resx">
       <DependentUpon>rapportsec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rapportsprov.resx">
+      <DependentUpon>rapportsprov.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Report1.rdlc" />
     <EmbeddedResource Include="sec.resx">
@@ -279,8 +304,12 @@
     <EmbeddedResource Include="section.resx">
       <DependentUpon>section.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="utilisateur.rdlc" />
     <EmbeddedResource Include="utilisateur.resx">
       <DependentUpon>utilisateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="utrap.resx">
+      <DependentUpon>utrap.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="brassageinskaDataSet.xsc">
       <DependentUpon>brassageinskaDataSet.xsd</DependentUpon>

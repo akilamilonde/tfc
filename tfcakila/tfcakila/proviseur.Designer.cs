@@ -40,6 +40,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button6 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -51,6 +52,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Navy;
+            this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.pictureBox4);
@@ -64,7 +66,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 610);
+            this.panel1.Size = new System.Drawing.Size(200, 756);
             this.panel1.TabIndex = 0;
             // 
             // button3
@@ -112,7 +114,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(200, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1220, 610);
+            this.panel2.Size = new System.Drawing.Size(1544, 756);
             this.panel2.TabIndex = 1;
             // 
             // button4
@@ -120,7 +122,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Goudy Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(2, 332);
+            this.button4.Location = new System.Drawing.Point(1, 399);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(251, 74);
             this.button4.TabIndex = 11;
@@ -154,7 +156,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::tfcakila.Properties.Resources.disconnected_30px;
-            this.pictureBox4.Location = new System.Drawing.Point(10, 347);
+            this.pictureBox4.Location = new System.Drawing.Point(9, 414);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(45, 41);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -192,11 +194,24 @@
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
+            // button6
+            // 
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button6.Font = new System.Drawing.Font("Goudy Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Location = new System.Drawing.Point(0, 319);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(251, 74);
+            this.button6.TabIndex = 15;
+            this.button6.Text = "Rapport";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // proviseur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1420, 610);
+            this.ClientSize = new System.Drawing.Size(1744, 756);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "proviseur";
@@ -225,5 +240,6 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button6;
     }
 }

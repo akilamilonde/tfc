@@ -45,7 +45,21 @@ namespace tfcakila
 
         private void button3_Click(object sender, EventArgs e)
         {
+            utrap utu = new utrap();
+            panel3.Controls.Clear();
+            panel3.Controls.Add(utu);
+        }
 
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void aceuilcool_Load(object sender, EventArgs e)
+        {
+            acceuil ac = new acceuil();
+            panel3.Controls.Clear();
+            panel3.Controls.Add(ac);
         }
     }
 }

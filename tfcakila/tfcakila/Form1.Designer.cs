@@ -31,10 +31,10 @@
             this.txtusername = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -74,6 +74,14 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "LOGIN";
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(585, 214);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(307, 35);
+            this.textBox1.TabIndex = 11;
+            // 
             // pictureBox5
             // 
             this.pictureBox5.Image = global::tfcakila.Properties.Resources.logo_inska;
@@ -104,20 +112,12 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(585, 214);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(307, 35);
-            this.textBox1.TabIndex = 11;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Navy;
-            this.ClientSize = new System.Drawing.Size(938, 422);
+            this.ClientSize = new System.Drawing.Size(973, 423);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.label1);
