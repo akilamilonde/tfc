@@ -66,5 +66,12 @@ namespace tfcakila
             panel2.Controls.Clear();
             panel2.Controls.Add(af);
         }
+
+        private void proviseur_Load(object sender, EventArgs e)
+        {
+            acceuil ac = new acceuil();
+            panel2.Controls.Clear();
+            panel2.Controls.Add(ac);
+        }
     }
 }

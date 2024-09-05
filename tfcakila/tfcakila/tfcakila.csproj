@@ -163,6 +163,12 @@
     <Compile Include="mixage.Designer.cs">
       <DependentUpon>mixage.cs</DependentUpon>
     </Compile>
+    <Compile Include="mwalimu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mwalimu.Designer.cs">
+      <DependentUpon>mwalimu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="proviseur.cs">
@@ -247,6 +253,7 @@
     <EmbeddedResource Include="eleve.resx">
       <DependentUpon>eleve.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="eneignant.rdlc" />
     <EmbeddedResource Include="enseignant.resx">
       <DependentUpon>enseignant.cs</DependentUpon>
     </EmbeddedResource>
@@ -271,6 +278,9 @@
     <EmbeddedResource Include="listeinscrits.rdlc" />
     <EmbeddedResource Include="mixage.resx">
       <DependentUpon>mixage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mwalimu.resx">
+      <DependentUpon>mwalimu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

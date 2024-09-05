@@ -23,5 +23,12 @@ namespace tfcakila
             panel2.Controls.Clear();
             panel2.Controls.Add(incris);
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            mwalimu mwa = new mwalimu();
+            panel2.Controls.Clear();
+            panel2.Controls.Add(mwa);
+        }
     }
 }

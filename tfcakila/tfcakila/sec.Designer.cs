@@ -183,9 +183,9 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Goudy Old Style", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(8, 87);
+            this.button3.Location = new System.Drawing.Point(12, 87);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(205, 74);
+            this.button3.Size = new System.Drawing.Size(206, 74);
             this.button3.TabIndex = 7;
             this.button3.Text = "Enregistré élèves";
             this.button3.UseVisualStyleBackColor = true;
@@ -312,6 +312,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "sec";
             this.Text = "sec";
+            this.Load += new System.EventHandler(this.sec_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
