@@ -58,3 +58,5 @@ D:\tfc\tfcakila\tfcakila\obj\Debug\tfcakila.utrap.resources
 D:\tfc\tfcakila\tfcakila\obj\Debug\tfcakila.rapafec.resources
 D:\tfc\tfcakila\tfcakila\obj\Debug\tfcakila.rapportsprov.resources
 D:\tfc\tfcakila\tfcakila\obj\Debug\tfcakila.mwalimu.resources
+D:\tfc\tfcakila\tfcakila\obj\Debug\tfcakila.listemixqge.resources
+D:\tfc\tfcakila\tfcakila\obj\Debug\tfcakila.classeinscri.resources

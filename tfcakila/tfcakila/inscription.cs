@@ -72,7 +72,7 @@ namespace tfcakila
             try
             {
 
-                MySqlCommand cmd = new MySqlCommand("select * from eleve", con);
+                MySqlCommand cmd = new MySqlCommand("SELECT * from eleve where (ideleve) NOT IN (SELECT ideleve from inscription)", con);
                 con.Open();
                 MySqlDataReader dr = cmd.ExecuteReader();
                 while (dr.Read())

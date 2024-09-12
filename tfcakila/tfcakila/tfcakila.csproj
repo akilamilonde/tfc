@@ -92,6 +92,12 @@
     <Compile Include="classe.Designer.cs">
       <DependentUpon>classe.cs</DependentUpon>
     </Compile>
+    <Compile Include="classeinscri.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="classeinscri.Designer.cs">
+      <DependentUpon>classeinscri.cs</DependentUpon>
+    </Compile>
     <Compile Include="controllisteinscri.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -108,6 +114,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
     </Compile>
     <Compile Include="eleve.cs">
       <SubType>UserControl</SubType>
@@ -156,6 +167,12 @@
     </Compile>
     <Compile Include="jury.Designer.cs">
       <DependentUpon>jury.cs</DependentUpon>
+    </Compile>
+    <Compile Include="listemixqge.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="listemixqge.Designer.cs">
+      <DependentUpon>listemixqge.cs</DependentUpon>
     </Compile>
     <Compile Include="mixage.cs">
       <SubType>UserControl</SubType>
@@ -244,6 +261,9 @@
     <EmbeddedResource Include="classe.resx">
       <DependentUpon>classe.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="classeinscri.resx">
+      <DependentUpon>classeinscri.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="controllisteinscri.resx">
       <DependentUpon>controllisteinscri.cs</DependentUpon>
     </EmbeddedResource>
@@ -269,6 +289,7 @@
     <EmbeddedResource Include="Form4.resx">
       <DependentUpon>Form4.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="inscriclasse.rdlc" />
     <EmbeddedResource Include="inscription.resx">
       <DependentUpon>inscription.cs</DependentUpon>
     </EmbeddedResource>
@@ -276,9 +297,13 @@
       <DependentUpon>jury.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="listeinscrits.rdlc" />
+    <EmbeddedResource Include="listemixqge.resx">
+      <DependentUpon>listemixqge.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mixage.resx">
       <DependentUpon>mixage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="mixeeleve.rdlc" />
     <EmbeddedResource Include="mwalimu.resx">
       <DependentUpon>mwalimu.cs</DependentUpon>
     </EmbeddedResource>
@@ -342,6 +367,17 @@
     </None>
     <None Include="DataSet1.xss">
       <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

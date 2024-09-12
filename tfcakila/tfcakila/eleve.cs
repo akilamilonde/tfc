@@ -100,7 +100,7 @@ namespace tfcakila
         {
             try
             {
-                MySqlCommand cmd = new MySqlCommand("Update eleve set  nom='" + txtnom.Text + "',postnom='" + txtpostnom.Text + "', prenom'" + txtprenom.Text + "',genre='" + cmbgenre.Text + "', datenaissence'" + dtnaissance.Value.ToString("yyMMdd") + "',lieunaissance='" + txtlieu.Text + "' where ideleve='" + txtideleve.Text + "'",con);
+                MySqlCommand cmd = new MySqlCommand("Update eleve set  nom='" + txtnom.Text + "',postnom='" + txtpostnom.Text + "', prenom='" + txtprenom.Text + "',genre='" + cmbgenre.Text + "', datenaissence='" + dtnaissance.Value.ToString("yyMMdd") + "',lieunaissance='" + txtlieu.Text + "' where ideleve='" + txtideleve.Text + "'",con);
                 con.Open();
                 if (cmd.ExecuteNonQuery() == 1) {
                     con.Close();

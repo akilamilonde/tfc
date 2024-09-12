@@ -23,5 +23,12 @@ namespace tfcakila
             panel1.Controls.Clear();
             panel1.Controls.Add(incris);
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            listemixqge incr = new listemixqge();
+            panel1.Controls.Clear();
+            panel1.Controls.Add(incr);
+        }
     }
 }
